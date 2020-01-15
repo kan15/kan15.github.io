@@ -1,0 +1,42 @@
+@media all and (max-width: 1200px) {
+    main {
+        padding: 15px;
+    }
+}
+@media all and (max-width: 1330px) {
+    .form   {
+        width: 33.3%;
+    }
+    .content__gif {
+        width: 33.3%;
+    }
+}
+@media all and (max-width: 990px) {
+    .form   {
+        width: 50%;
+    }
+    .content__gif {
+        width: 50%;
+    }
+}
+@media all and (max-width: 713px) {
+    .form   {
+        width: 100%;
+    }
+}
+@media all and (max-width: 665px) {
+    img {
+        height: 100%;
+    }
+    .content__gif {
+        width: 100%;
+    }
+}
+@media all and (max-width: 414px) {
+    .form   {
+        width: 100%;
+    }
+    .content__gif {
+        width: 100%;
+    }
+}
