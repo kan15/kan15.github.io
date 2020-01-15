@@ -1,0 +1,127 @@
+@media all and (max-width: 1200px) {
+    .container {
+        padding: 0 20px;
+    }
+}
+@media all and (max-width: 1043px) {
+    .laptop-img {
+        top: 310px;
+    }
+}
+@media all and (max-width: 776px) {
+    .main-text-header {
+        width: 70%;
+    }
+    .header-heading {
+        font-size: 40px;
+    }
+    .listing-item {
+        display: block;
+        width: 80%;
+        margin: 0 auto 25px;
+    }
+    .design {
+        padding: 90px 0 150px;
+    }
+    .features-item {
+        width: 50%;
+    }
+    .laptop-img {
+        top: 405px;
+    }
+    .page-footer {
+        padding: 700px 0 100px;
+    }
+}
+@media all and (max-width: 686px) {
+    .select-wrapper, .email-wrapper, .select-email-button {
+        display: block;
+        margin: 0px 0px 20px;
+    }
+    .input-email {
+        padding-right: 80px;
+    }
+    .guidelines-item {
+        display: block;
+        margin-top: -1px;
+    }
+    .guidelines-item:not(:first-child){
+        border-left: 1px solid #28c8c6;
+    }
+    .guidelines-item:not(:last-child){
+        border-right: 1px solid #28c8c6;
+    }
+}
+@media all and (max-width: 540px) {
+    .fixed-button-up {
+        width: 30px;
+        height: 30px;
+        background-size: 30%;
+    }
+    .main-text-header {
+        width: 85%;
+    }
+    .navigation-item {
+        display: block;
+        text-align: center;
+        padding-bottom: 5px;
+    }
+    .navigation-link {
+        padding: 5px 0;
+    }
+    .join-button {
+        padding: 24px 22px 20px 38px;
+    }
+    .navigation-item-button {
+        margin-top: 30px;
+    }
+    .design-heading {
+        font-size: 30px;
+    }
+    .img-mobile  {
+        width: 50%;
+    }
+    .features-item {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    .features-title {
+        margin: 20px 0;
+    }
+    .listing-title {
+        padding: 20px 0; 
+    }
+    .listing-item {
+        width: 100%;
+    }
+    .pre-footer {
+        padding: 115px 0;
+    }
+    .main-text-footer {
+        width: 60%;
+    }
+    .logo-footer-img {
+        width: 100px;
+    }
+    .footer-heading {
+        display: block; 
+        font-size: 60px;
+        font-size: 40px;
+    }
+    .page-footer {
+        padding: 500px 0 100px;
+    }
+    .social-nets {
+        float: none;
+    }
+    .footer-adress {
+        display: block;
+        text-align: left;
+        float: none;
+    }
+}
+@media all and (max-width: 385px) {
+    .laptop-img {
+        top: 520px;
+    }
+}

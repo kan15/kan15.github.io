@@ -1,0 +1,707 @@
+@font-face {
+    src: url(../fonts/montserratbold.woff2) format('woff2'), url(../fonts/montserratbold.woff) format('woff');
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-style: bold;
+}
+@font-face {
+    src: url(../fonts/GothamPro-Bold.woff) format('woff');
+    font-family: 'Gotham';
+    font-weight: 700;
+    font-style: bold;
+}
+@font-face {
+    src: url(../fonts/GothamPro-Medium.woff) format('woff');
+    font-family: 'Gotham';
+    font-weight: 500;
+    font-style: medium;
+}
+@font-face {
+    src: url(../fonts/montserrat.woff2) format('woff2'), url(../fonts/montserrat.woff) format('woff');
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    src: url(../fonts/MyriadPro-Regular.woff) format('woff');
+    font-family: 'MyriadPro';
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    src: url(../fonts/Firasansbold.woff2) format('woff2'), url(../fonts/Firasansbold.woff) format('woff');
+    font-family: 'Firasans';
+    font-weight: 700;
+    font-style: bold;
+}
+* {
+    box-sizing: border-box
+}
+.clearfix::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+body {
+    margin: 0;
+    overflow-x: hidden;
+    min-width: 320px;
+}
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+/*----------------FIXED BUTTON----------------*/
+.fixed-button-up {
+    display: block;
+    position: fixed;
+    bottom: 50%;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    background: #919191 url(../img/arrow-fixed@2x.png) center/cover no-repeat;
+    background-size: 50%;
+    z-index: 1;
+    opacity: 0.6;
+    border-radius: 3px;
+}
+.fixed-button-contact {
+    font-size: 16px;
+    right: 0;
+    font-weight: 700;
+    color: #fff;
+    padding: 20px 45px;
+    top: 30%;
+    background-color: #8500d2;
+    transform: rotate(-90deg);
+    transform-origin: 100% 100%;
+    z-index: 5;
+    display: block;
+    position: fixed;
+    border-radius: 3px;
+    text-decoration: none;
+}
+.fixed-button-text {
+    font-family: 'Gotham';
+    font-weight: 700;
+    font-style: bold;
+}
+
+/*----------------HEADER----------------*/
+.page-header {
+    background: #3c086b url("../img/bg_header.jpg") center/cover;
+    padding: 74px 0 258px;
+    position: relative;
+}
+.navigation-logo {
+    display: inline-block;
+}
+.navigation-img {
+    width: 68px;
+}
+.navigation-list {
+    font-size: 0;
+    margin: 20px -10px 0;
+    padding: 0;
+    list-style: none;
+    float: right;
+    display: inline-block;
+}
+.navigation-item {
+    display: inline-block;
+    font-family: 'Gotham';
+    font-weight: 700;
+    padding: 0 10px;
+}
+.navigation-link {
+    font-size: 14px;
+    line-height: 29px;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 22px 0;
+}
+.navigation-link:hover {
+    border-bottom: 3px solid #28c8c6;
+    width: 30px;
+}
+.header-heading {
+    font-size: 60px;
+    line-height: 55px;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: 'Montserrat';
+    font-weight: 700;
+}
+.header-footer-text {
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    font-weight: 500;
+    font-style: medium;
+    font-family: 'Gotham';
+}
+.main-text {
+    width: 43.4%;
+    display: inline-block;
+}
+.join-button {
+    padding: 24px 22px 20px 38px;
+    background-color: #a100ff;
+    border-radius: 3px;
+    font-size: 16px;
+    line-height: 28px;
+    text-transform: none;
+    background: linear-gradient(to right, #a100ff 50%, #9c2a75 50%);
+    background-size: 200% 100%;
+    background-position:left bottom;
+    transition:all 1s ease;
+}
+.join-button:hover {
+    border-bottom: none;
+    background-position:right bottom;
+}
+.join-word {
+    margin-right: 21px;
+}
+.join-img {
+    width: 16px;
+    vertical-align: middle;
+}
+.select-email {
+    font-size: 0px; /*We delete the gap between blocks with property display:inline-block. Useful trick*/
+}
+.select-wrapper, .email-wrapper {
+    display: inline-block;
+    margin-right: 17px;
+    vertical-align: top;
+}
+.entry-field {
+    border-radius: 2px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    color: #333333;
+    font-size: 14px;
+    line-height: 21px;
+}
+.select-design {
+    border-radius: 2px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    color: #333333;
+    font-size: 14px;
+    padding: 21px 170px 21px 25px;
+    background: #fff url(../img/select-arrow@2x.png);
+    background-repeat:no-repeat;
+    appearance: none;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+    -ms-appearance:none;
+    background-position: 92% 55%;
+    background-size: 10%;
+    border: none;
+    opacity: 0.8;
+}
+.input-email { 
+    border-radius: 2px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    color: #333333;
+    font-size: 14px;
+    line-height: 14px;
+    border: none;
+    padding: 22px 70px 22px 25px;
+    background: #fff url(../img/email-arrow@2x.png);
+    background-repeat:no-repeat;
+    background-position: 92% 55%;
+    background-size: 5%;
+    opacity: 0.8;
+}
+input[type="email"]::-moz-placeholder {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    color: #333333;
+    font-size: 14px;
+    line-height: 21px;
+    }
+input[type="email"]::-webkit-input-placeholder { 
+    font-family: 'Montserrat';
+    font-weight: 400;
+    color: #333333;
+    font-size: 14px;
+    line-height: 21px; }
+input[type="email"]:-ms-input-placeholder { 
+    font-family: 'Montserrat';
+    font-weight: 400;
+    color: #333333;
+    font-size: 14px;
+    line-height: 21px; }
+input[type="email"]::-ms-input-placeholder { 
+    font-family: 'Montserrat';
+    font-weight: 400;
+    color: #333333;
+    font-size: 14px;
+    line-height: 21px; }
+input[type="email"]::placeholder { 
+    font-family: 'Montserrat';
+    font-weight: 400;
+    color: #333333;
+    font-size: 14px;
+    line-height: 21px;
+}
+.select-email-button {
+    display: inline-block;
+    position: relative;
+    background-color: #28c8c6;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.5s;
+    width: 60px;
+    height: 60px;
+    vertical-align: top;
+}
+.arrow-button-img {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 16px;
+}
+.select-email-button:hover {
+    background-color: #188584;
+}
+
+/*----------------Section 2----------------*/
+.design {
+    background: #f5f7f9 url("../img/background_section2.png") center/cover no-repeat;
+    padding: 120px 0 315px;
+    position: relative
+}
+.design-heading {
+    text-transform: uppercase;
+    font-size: 40px;
+    line-height: 29px;
+    font-family: 'Gotham';
+    font-weight: 500;
+    color: #333b42;
+    text-align: center;
+    margin-top: 0;
+}
+.design-text {
+    font-size: 14px;
+    line-height: 25px;
+    font-family: 'Gotham';
+    font-weight: 400;
+    color: #74797e;
+    text-align: center;
+    margin-bottom: 35px;
+}
+.anchor-design {
+    position: absolute;
+    z-index: 3;
+    top: auto;
+    bottom: -57px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 114px;
+    height: 114px;
+    border-radius: 50%;
+    background-color: #f5f7f9;
+    text-align: center;
+    vertical-align: center;
+    background: #f5f7f9 url("../img/anchor-arrow-grey@2x.png") center no-repeat;
+    background-size: 25%
+}
+.img-mobile {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: auto;
+    bottom: 0;
+    width: 35.6%;
+    margin: auto;
+    display: block;
+}
+.anchor-features {
+    background-color: #28c8c6;
+    background: #28c8c6 url("../img/anchor-arrow-white@2x.png") center no-repeat;
+    position: absolute;
+    z-index: 3;
+    top: auto;
+    bottom: -57px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 114px;
+    height: 114px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: center;
+    background-size: 25%
+}
+
+/*----------------Section 3----------------*/
+.features {
+    padding-top: 160px;
+    position: relative;
+    padding-bottom: 140px;
+}
+.features-heading {
+    font-family: 'Gotham';
+    font-weight: 700;
+    font-style: bold;
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 29px;
+    color: #333b42;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.features-text {
+    font-family: 'Gotham';
+    font-weight: 500;
+    font-style: medium;
+    font-size: 14px;
+    line-height: 25px;
+    color: #74797e;
+    text-align: center;
+    margin-top: 0;
+}
+.features-description {
+    margin-top: 35px;
+    margin-bottom: 60px;
+    font-family: 'Gotham';
+    font-weight: 500;
+    font-style: medium;
+    font-size: 14px;
+    line-height: 25px;
+    color: #74797e;
+    text-align: center;
+}
+.features-list {
+    list-style: none;
+    margin: 0 -12px; /*Here we delete the distance before our cards and after.*/
+    padding: 0;
+    font-size: 0;
+}
+.features-item {
+    display: inline-block;
+    width: 25%;
+    text-align: center;
+    padding: 0 12px;
+    vertical-align: top;
+}
+.features-item:nth-child(4){
+    margin-right: 0px;
+}
+.features-img {
+    width: 137px;
+}
+.features-title {
+    font-family: 'Gotham';
+    font-weight: 700;
+    font-style: bold;
+    text-transform: uppercase;
+    font-size: 17px;
+    line-height: 29px;
+    color: #333b42;
+    margin: 40px 0;
+}
+.anchor-guidelines {
+    background-color: #fff;
+    background: #fff url("../img/anchor-arrow-grey-white@2x.png") center no-repeat;
+    position: absolute;
+    top: auto;
+    bottom: -57px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 114px;
+    height: 114px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: center;
+    background-size: 25%
+}
+.arc {
+    width: 114px;
+    height: 57px;
+    border-radius: 114px 114px 0 0;
+    border-top: 1px solid #d8e0e8;
+    border-left: 1px solid #d8e0e8;
+    border-right: 1px solid #d8e0e8;
+    transform: rotate(-180deg);
+    position: absolute;
+    margin: auto;
+    top: auto;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+}
+
+/*--------------Section 4----------------*/
+.guidelines {
+    padding-top: 140px;
+    padding-bottom: 100px;
+    background-color: #f6f9fa;
+    border-top: 1px solid #d8e0e8;
+}
+.guidelines-heading {
+    font-family: 'Gotham';
+    font-weight: 700;
+    font-style: bold;
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 29px;
+    color: #333b42;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 30px;
+}
+.guidelines-description {
+    margin: 0;
+    font-family: 'Gotham';
+    font-weight: 500;
+    font-style: medium;
+    font-size: 14px;
+    line-height: 25px;
+    color: #74797e;
+    text-align: center;
+}
+.guidelines-menu {
+    list-style: none;
+    margin: 0;
+    padding: 50px 0;
+    text-align: center;
+    font-size: 0px;
+}
+.guidelines-item {
+    display: inline-block;
+    margin-left: -1px; /*This property is necessary for not duplication our borders between our li*/
+    border: 1px solid #28c8c6;
+}
+.guidelines-item:not(:first-child){
+    border-left: none;
+}
+.guidelines-item:not(:last-child){
+    border-right: none;
+}
+.guidelines-link {
+    display: block;
+    padding: 24px 42px;
+    font-family: 'Gotham';
+    font-weight: 700;
+    font-style: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 29px;
+    text-decoration: none;
+    color: #28c8c6;
+}
+.guidelines-link:hover {
+    background-color: #28c8c6;
+    color: #fff;
+}
+.listing-list {
+    list-style: none;
+    padding: 0;
+    font-size: 0;
+    margin: 0 -10px; /*Here we delete the distance before our cards and after.*/
+}
+.listing-item {
+    display: inline-block;
+    padding: 0 10px;
+    width: 33.33%;
+    text-align: center;
+}
+.listing-link {
+    display: block;
+    text-decoration: none;
+}
+.listing-img {
+    width: 100%;
+    vertical-align: top;
+}
+.listing-title {
+    display: block;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 25px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-style: normal;
+    padding: 30px 0;
+    background-color: #fff;
+    border-color: transparent;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    color: #333b42;
+}
+.listing-title::after {
+    background-image: url(../img/listing-arrow@2x.png);
+    background-repeat: no-repeat;
+    background-size: 8px 14px;
+    display: inline-block;
+    width: 8px; 
+    height: 14px;
+    content:"";
+    font-size: 0;
+    margin-left: 70px;
+    vertical-align: middle;
+}
+
+/*--------------Pre-Footer----------------*/
+.pre-footer {
+    background: #3c086b url(../img/bg_girl.jpg) center/cover no-repeat;
+    padding: 333px 0;
+}
+.pre-footer-contant {
+    font-size: 0px;
+    position: relative;
+}
+.footer-logo {
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 42px;
+}
+.logo-footer-img {
+    width: 177px;
+}
+.footer-heading {
+    display: inline-block; 
+    font-size: 60px;
+    line-height: 55px;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    margin: 0 0 45px 0;
+}
+.footer-text {
+    margin: 0;
+}
+.laptop-img {
+    display: block;
+    width: 77%;
+    position: absolute;
+    margin: auto;
+    top: 125px;
+    bottom: auto;
+    left: auto;
+    right: 0;
+}
+
+/*--------------Footer----------------*/
+.page-footer {
+    background: #fff;
+    padding-top: 815px;
+    padding-bottom: 145px
+}
+.social-nets {
+    float: right;
+}
+.nets-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    margin: 0 -3px; /*Here we delete the distance before our cards and after*/
+}
+.net-item {
+    display: inline-block;
+    padding: 0 3px;
+}
+.net-link {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    font-family: 'Firasans';
+    font-weight: 700;
+    font-size: 13px;
+    border-radius: 2px;
+    padding: 11px 20px 13px 40px;
+}
+.twitter-link {
+    background: #69b6f2;
+}
+.facebook-link {
+    background: #3a579a;
+}
+.net-link::before {
+    position: absolute;
+    left: 18px;
+    top: 11px;
+    content: "";
+    background-size: 100%;
+    background-repeat:no-repeat;
+    text-align: center;
+}
+.twitter-link::before {
+    background-image: url(../img/tweeter-logo@2x.png);
+    height: 13px;
+    width: 14px;
+}
+.facebook-link::before {
+    background-image: url(../img/facebook-logo@2x.png);
+    height: 16px;
+    width: 10px;
+}
+.footer-menus {
+    font-size: 0px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+.first-footer-menu,
+.second-footer-menu {
+    display: inline-block;
+    vertical-align: top;
+}
+.first-footer-menu {
+    padding-right: 85px;
+}
+.features-footer-list,
+.contacts-footer-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.features-footer-link,
+.contacts-footer-link {
+    text-decoration: none;
+    color: #8297a7;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 35px;
+}
+.footer-adress {
+    display: inline-block;
+    color: #8297a7;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 35px;
+    font-style: normal;
+    vertical-align: top;
+    text-align: right;
+    float: right;
+}
+.footer-last-text {
+    display: inline-block;
+    color: #8297a7;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 35px;
+    font-style: normal;
+    margin: 0;
+}
