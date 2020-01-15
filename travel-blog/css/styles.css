@@ -93,7 +93,7 @@ body {
 }
 .main-section {
   background: #003e5f center/cover;
-  background-image: url(/img/mainpost.jpg);
+  background-image: url(../img/mainpost.jpg);
   height: 480px;
   color: #fff;
   padding-left: 24px;
